@@ -1,0 +1,10 @@
+{
+    "line1": "    ,stateMap_ (std::make_shared <SHAMap> (SHAMapType::STATE,\n",
+    "line2": "    family, SHAMap::version{1}))\n",
+    "line3": "    .rules_{config.features}\n",
+    "line4": "{\n",
+    "line5": "    info_.seq = 1;\n",
+    "line6": "}\n",
+    "line7": "    info_.drops = SYSTEM_CURRENCY_START;\n",
+    "line8": "    info_.closeTimeResolution = ledgerDefaultTimeResolution;\n"
+}

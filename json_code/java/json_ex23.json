@@ -1,0 +1,10 @@
+{
+    "line1": "        float side=input.nextFloat();\n",
+    "line2": "        double area=(Math.sqrt(3)/4)*Math.pow(side,2);\n",
+    "line3": "        double volume=area*side;\n",
+    "line4": "        System.out.printf(\"Area of the triangle : %.2f cm2\\n\" , area);\n",
+    "line5": "        System.out.printf(\"(Triangle doesn't have volume mistake in question!)Volume : %.2f cm3\\n\",volume);\n",
+    "line6": "    }\n",
+    "line7": "}\n",
+    "line8": "import java.util.Scanner;\n"
+}

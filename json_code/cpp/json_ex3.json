@@ -1,0 +1,10 @@
+{
+    "line1": "int t_balls,t_runs,runs,balls;\n",
+    "line2": "cin>>t_balls>>t_runs;\n",
+    "line3": "cout<<balls;\n",
+    "line4": "int tovers=t_balls/6;\n",
+    "line5": "    cout<<tovers<<NL;\n",
+    "line6": "float overs;\n",
+    "line7": "overs=(balls/6)+(balls%6)/10.0;\n",
+    "line8": "    cout<<overs<<NL;\n"
+}

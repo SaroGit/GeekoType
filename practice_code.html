@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css grid</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="practice_css.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<img class="pre_load" src="images\loader.gif">
+	<div id="content">
+		<nav id="myNav" class="topnav">
+          <img src="..\images\keyboard_icon.png" >
+          <span> Geeko Type.com</span>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             <i class="fa fa-bars"></i>
+          </a>
+          <a id="feed">Feedback</a>
+          <a href="learn_more.html" id="learn_more">Learn More</a>
+          <a href="signin\sign_in.html" id="si">Sign In</a>
+          <a href="signup\sign_up.html" id="su">Sign Up</a>
+          <a href="practice_code.html" class="active">Practice</a>
+          <a href="home.html">Home</a>  
+        </nav>
+		<div id="Feedback_container">
+			<div id="Feedback">
+				<h2 style="padding: 0; background: #66cc00; color: white; margin-top: 0;">Feedback</h2>
+				<textarea id="feed_text" rows="8" cols="50" placeholder="Enter your Feedback!!"></textarea><br>
+				<button class="button">Submit</button>
+				<button id="close">Close</button>
+			</div>
+		</div>
+		<div id="stats_container">
+			<div id="stats">
+				<h2 style="background: #66cc00; color: white; margin-top: 0;">Current Sample Stats</h2>
+				<section class="stat_style">
+					<div>Error Keys: <span id="stat_error"></span></div>
+					<div>Speed in WPM: <span id="stat_speed"></span></div>
+					<div>Total time taken in seconds: <span id="stat_time"></span></div>
+					<button class="button" id="next" >Next Sample</button>
+				</section>
+			</div>
+		</div>
+		<main>
+			<div class="container">
+				<div class="backdrop" rows="6" cols="60" ></div>
+				<textarea class="textarea" rows="6" cols="60" readonly></textarea>
+			</div>
+			<br>
+			<hr>
+		    <ul id="keyboard">
+	 <li class="symbol" id="192"><span class="off">`</span><span class="on">~</span></li>
+	 <li class="symbol" id="49"><span class="off">1</span><span class="on">!</span></li>
+	 <li class="symbol" id="50"><span class="off">2</span><span class="on">@</span></li>
+	 <li class="symbol" id="51"><span class="off">3</span><span class="on">#</span></li>
+	 <li class="symbol" id="52"><span class="off">4</span><span class="on">$</span></li>
+	 <li class="symbol" id="53"><span class="off">5</span><span class="on">%</span></li>
+	 <li class="symbol" id="54"><span class="off">6</span><span class="on">^</span></li>
+	 <li class="symbol" id="55"><span class="off">7</span><span class="on">&</span></li>
+	 <li class="symbol" id="56"><span class="off">8</span><span class="on">*</span></li>
+	 <li class="symbol" id="57"><span class="off">9</span><span class="on">(</span></li>
+	 <li class="symbol" id="48"><span class="off">0</span><span class="on">)</span></li>
+	 <li class="symbol" id="189"><span class="off">-</span><span class="on">_</span></li>
+	 <li class="symbol" id="187"><span class="off">=</span><span class="on">+</span></li>
+		      <li class="backspace lastitem" id="8">Backspace</li>
+		      <li class="tab" id="9">Tab</li>
+		      <li class="letter" id="81">q</li> 
+		      <li class="letter" id="87">w</li>
+		      <li class="letter" id="69">e</li>
+		      <li class="letter" id="82">r</li>
+		      <li class="letter" id="84">t</li>
+		      <li class="letter" id="89">y</li>
+		      <li class="letter" id="85">u</li>
+		      <li class="letter" id="73">i</li>
+		      <li class="letter" id="79">o</li>
+		      <li class="letter" id="80">p</li>
+		      <li class="symbol" id="219"><span class="off">[</span><span class="on">{</span></li>
+		      <li class="symbol" id="221"><span class="off">]</span><span class="on">}</span></li>
+		      <li class="symbol lastitem" id="220"><span class="off">\</span><span class="on">|</span></li>
+		      <li class="capslock" id="20">CapsLock</li>
+		      <li class="letter" id="65">a</li>
+		      <li class="letter" id="83">s</li>
+			  <li class="letter" id="68">d</li>
+		      <li class="letter" id="70">f</li>
+		      <li class="letter" id="71">g</li>
+		      <li class="letter" id="72">h</li>
+		      <li class="letter" id="74">j</li>
+		      <li class="letter" id="75">k</li>
+		      <li class="letter" id="76">l</li>
+		<li class="symbol" id="186"><span class="off">;</span><span class="on">:</span></li>
+		<li class="symbol" id="222"><span class="off">'</span><span class="on">"</span></li>
+		      <li class="enter lastitem" id="13">Enter</li>
+		      <li class="left-shift" id="16">Shift</li>
+		      <li class="letter" id="90">z</li>
+		      <li class="letter" id="88">x</li>
+		      <li class="letter" id="67">c</li>
+		      <li class="letter" id="86">v</li>
+		      <li class="letter" id="66">b</li>
+		      <li class="letter" id="78">n</li>
+		      <li class="letter" id="77">m</li>
+	     <li class="symbol" id="188"><span class="off">,</span><span class="on">&lt</span></li>
+	     <li class="symbol" id="190"><span class="off">.</span><span class="on">&gt</span></li>
+	     <li class="symbol" id="191"><span class="off">/</span><span class="on">?</span></li>
+		 <li class="right-shift lastitem">Shift</li>
+		      <li class="space lastitem" id="32">&nbsp;</li>
+
+		    </ul>
+		</main>
+		<stats>
+			<section>
+					<span id="speed">Speed: 00</span>
+					<span id="errors">Errors: 00</span>
+					<span id="curr_key">Current Key: A</span>
+			</section>
+			<p></p>
+		    <div id="restart"><a>Restart</a></div>
+		    <div id="next_sample">Next Sample</div>
+			
+		</stats>
+		<choose>
+			<div><a href="practice_qwerty.html" style="text-decoration: none; color: none;">Switch to QWERTY Practice</a></div>
+			<span class="choose">Choose Language</span>
+		</choose>
+		<left>
+			<div id="python" class="active1"><img class="remove_img" src="images\python_icon.png"></div>
+			<div id="java"><img class="remove_img" src="images\java_icon.png"></div>
+			<div id="cpp"><img class="remove_img" src="images\cpp_icon.png"></div>
+			<div id="html"><img class="remove_img"  src="images\html_icon.png"></div>
+		</left>
+		<name id="showname">
+			<div>Welcome!</div>
+			<div id="pc_name">Hi Name</div>
+		</name>
+		<right>
+	        <span class="active2" href="#"><img src="images\profile_icon.png"></span>
+	        <span id="pc_login"><a href="signin/sign_in.html" style="text-decoration: none; color: white; cursor: pointer;"> Login</a></span>
+	        <span id="pc_prog"><a href="Charts/chartq.html" style="text-decoration: none; color: white; cursor: pointer;"> Progress</a></span>
+	        <span id="pc_lead"><a href="Leaderboard/leader_board.html" style="text-decoration: none; color: white; cursor: pointer;"> Leaderboard</a></span>
+	        <span><a href="#footer" id="pc_about" style="text-decoration: none; color: white;cursor: pointer;">About</a></span>
+	        <span id="pc_out" style="cursor: pointer;">Logout</span>
+		</right>
+		<footer id="footer">
+			<div style="padding-top: 0">
+				&copy; GeekoType.com 2021-2031<br>
+				Chennai, India<hr>
+				You may reach out to us at<br><a href="" style="color: blue">support@geekotype.com</a>
+			</div>
+			<div>
+				Contact:<br><hr>
+				<a href="" style="color: blue">support@geekotype.com</a><br>
+				Phone: 987654321
+			</div>
+			<div>
+				Follow us on:<br><hr>
+		       <button style="background: #1091DA; border-radius: 10px; font-weight: bold;"><a href="https://twitter.com/Saravan38745679?s=08" style="text-decoration: none;" target="_blank">Twitter</a></button>
+          <button style="background: #0AAB10; border-radius: 10px; font-weight: bold;"><a href="https://wa.me/919384154069" style="text-decoration: none;" target="_blank">Whatsapp</a></button>
+			</div>
+		</footer>
+
+	</div>
+</body>
+	<script src="jquery.js"></script>
+	<script >
+		$("#java").click(function(){
+			sessionStorage.removeItem("count_code");
+			sessionStorage.setItem("language","java");
+			location.reload();
+		});
+		$("#cpp").click(function(){
+			sessionStorage.removeItem("count_code");
+			sessionStorage.setItem("language","cpp");
+			location.reload();
+		});
+		$("#html").click(function(){
+			sessionStorage.removeItem("count_code");
+			sessionStorage.setItem("language","html");
+			location.reload();
+		});
+		$("#python").click(function(){
+			sessionStorage.removeItem("count_code");
+			sessionStorage.setItem("language","python");
+			location.reload();
+		});
+    </script>
+
+          <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script>
+     $(window).ready(function(){
+      $(".pre_load").fadeOut(4000);
+    });
+     function myFunction() {
+  var x = document.getElementById("myNav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+
+  $("#learn_more").text("Logout").attr("href","home.html");
+  $("#si").text("Progress").attr("href","Charts/chartq.html");
+  $("#su").text("Leaderboard").attr("href","Leaderboard/leader_board.html");
+}
+if (window.matchMedia("(max-width:600px)").matches) {
+	$(".remove_img").remove();
+	$("#python").text("Python");
+	$("#java").text("Java");
+	$("#html").text("HTML");
+	$("#cpp").text("CPP");
+}
+
+    var firebaseConfig = {
+    apiKey: "AIzaSyCqaGiXWgJsXj04xZ10ULHkUaIcVxZhny8",
+    authDomain: "geekotype.firebaseapp.com",
+    databaseURL: "https://geekotype-default-rtdb.firebaseio.com",
+    projectId: "geekotype",
+    storageBucket: "geekotype.appspot.com",
+    messagingSenderId: "370787733542",
+    appId: "1:370787733542:web:782eaf81d7cd8c72b316e7",
+    measurementId: "G-7PZBTQLPWH"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+  db.settings({ timestampsInSnapshots: true });
+
+   auth.onAuthStateChanged((user) => {
+  if (user) {
+    $("#pc_login").remove();
+    $("#li_in").remove();
+  } else {
+  	 $("#showname").remove();
+  	 $("#pc_out").remove();
+  }
+});
+   const logout=$("#pc_out");
+  logout.on('click', (e)=>{
+    e.preventDefault();
+    auth.signOut().then(()=>{
+    	location.reload();
+    });
+  });
+    </script>
+    <script type="text/javascript" src="practice_js.js"></script>
+</html>

@@ -1,0 +1,10 @@
+{
+    "line1": "add(osc = new SawtoothOscillatorDPW());\n",
+    "line2": "osc.amplitude.set(0.03);\n",
+    "line3": "    // Use a lag to smoothly change frequency;\n",
+    "line4": "    add(lag = new AsymptoticRamp());\n",
+    "line5": "    double hlife = 0.01 + (Math.random());\n",
+    "line6": "    lag.halfLife.set(hlife);\n",
+    "line7": "// Set left/right pan randomly\n",
+    "line8": "    add(panner = new Pan());\n"
+}

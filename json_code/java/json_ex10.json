@@ -1,0 +1,10 @@
+{
+    "line1": "\n",
+    "line2": "    // combine\n",
+    "line3": "    Complex[] y = new Complex[N];\n",
+    "line4": "    for (int k = 0; k < N / 2; k++) {\n",
+    "line5": "        double kth = -2 * k * Math.PI / N;\n",
+    "line6": "        Complex wk = new Complex(Math.cos(kth), Math.sin(kth));\n",
+    "line7": "        y[k] = q[k].plus(wk.times(r[k]));\n",
+    "line8": "        y[k + N / 2] = q[k].minus(wk.times(r[k]));\n"
+}

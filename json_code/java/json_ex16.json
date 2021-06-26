@@ -1,0 +1,10 @@
+{
+    "line1": "\n",
+    "line2": "    Follower() {\n",
+    "line3": "        // Add a tone generator.\n",
+    "line4": "        add(osc = new SawtoothOscillatorDPW());\n",
+    "line5": "        osc.amplitude.set(0.03);\n",
+    "line6": "\n",
+    "line7": "        // Use a lag to smoothly change frequency.\n",
+    "line8": "        add(lag = new AsymptoticRamp());\n"
+}

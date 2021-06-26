@@ -1,0 +1,10 @@
+{
+    "line1": "  <script>\n",
+    "line2": "    var names = []; // DO NOT REMOVE\n",
+    "line3": "  </script>\n",
+    "line4": "  <script src=\"SpeakHello.js\"></script>\n",
+    "line5": "  <script src=\"SpeakGoodBye.js\"></script>\n",
+    "line6": "  <script src=\"script.js\"></script>\n",
+    "line7": "</head>\n",
+    "line8": "<body>\n"
+}

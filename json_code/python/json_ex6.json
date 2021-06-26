@@ -1,0 +1,10 @@
+{
+    "line1": "import re\n",
+    "line2": "string = input(\"Enter a string value: \")\n",
+    "line3": "pattern = '^[A-Z]'\n",
+    "line4": "found = re.match(pattern, string)\n",
+    "line5": "if found:\n",
+    "line6": "    print(\"The input value is started with letter\")\n",
+    "line7": "else:\n",
+    "line8": "    print(\"You have to type string start letter\")"
+}

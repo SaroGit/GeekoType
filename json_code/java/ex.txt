@@ -1,0 +1,207 @@
+public class HelloWorld
+{
+    public static void main(String[] args) {
+        System.out.println("Hello, World");
+	//Sample one
+	int num=10;
+    }
+}
+public final class Singleton {
+    private static final Singleton INSTANCE = new Singleton();
+    private Singleton() {}
+    public static Singleton getInstance()
+    {
+        return INSTANCE;
+    }
+}
+class Follower extends Circuit implements UnitSource
+{
+    UnitOscillator osc;
+    AsymptoticRamp lag;
+    Pan panner;
+    Follower() {
+        // Add a tone generator;
+}
+add(osc = new SawtoothOscillatorDPW());
+osc.amplitude.set(0.03);
+    // Use a lag to smoothly change frequency;
+    add(lag = new AsymptoticRamp());
+    double hlife = 0.01 + (Math.random());
+    lag.halfLife.set(hlife);
+// Set left/right pan randomly
+    add(panner = new Pan());
+panner.pan.set((Math.random() * 2.0));
+tiePoint.output.connect(lag.input);
+    // Add the LFO offset.
+	int a=0;
+        lfo.output.connect(lag.input);
+        lag.output.connect(osc.frequency);
+// Connect the oscillator to the left
+    osc.output.connect(panner.input){
+@Override
+    public UnitOutputPort getOutput()
+    {
+        return panner.output;
+	UnitOscillator osc;
+    	AsymptoticRamp lag;
+    }
+}
+public static Complex[] fft(Complex[] x) {
+    int N = x.length;
+
+        // base case
+    if (N == 1)
+        return new Complex[] { x[0] };
+
+        // radix 2 Cooley-Tukey FFT
+    if (N % 2 != 0) {
+        throw new RuntimeException("N is not a power of 2");
+    }
+        // fft of even terms
+    Complex[] even = new Complex[N / 2];
+    for (int k = 0; k < N / 2; k++) {
+        even[k] = x[2 * k];
+    }
+    Complex[] q = fft(even);
+
+    // fft of odd terms
+    Complex[] odd = even; // reuse the array
+    for (int k = 0; k < N / 2; k++) {
+        odd[k] = x[2 * k + 1];
+    }
+    Complex[] r = fft(odd);
+
+    // combine
+    Complex[] y = new Complex[N];
+    for (int k = 0; k < N / 2; k++) {
+        double kth = -2 * k * Math.PI / N;
+        Complex wk = new Complex(Math.cos(kth), Math.sin(kth));
+        y[k] = q[k].plus(wk.times(r[k]));
+        y[k + N / 2] = q[k].minus(wk.times(r[k]));
+    }
+    return y;
+}
+public final class Singleton {
+    private static final Singleton INSTANCE = new Singleton();
+
+    private Singleton() {}
+
+    public static Singleton getInstance() {
+        return INSTANCE;
+    }
+}
+public static int[] factor(int n) {
+    ArrayList<Integer> primeList = new ArrayList<Integer>();
+    int i = 0;
+    int p = primes[i];
+    int exponent = 0;
+    while (n > 1) {
+        // does the prime number divide evenly into n?
+        int d = n / p;
+        int m = d * p;
+        if (m == n) {
+            n = d;
+            exponent += 1;
+        } else {
+            primeList.add(exponent);
+            exponent = 0;
+            i += 1;
+            p = primes[i];
+        }
+    }
+    if (exponent > 0) {
+        primeList.add(exponent);
+    }
+    return primeListToArray(primeList);
+}
+class Follower extends Circuit implements UnitSource {
+    UnitOscillator osc;
+    AsymptoticRamp lag;
+    Pan panner;
+
+    Follower() {
+        // Add a tone generator.
+        add(osc = new SawtoothOscillatorDPW());
+        osc.amplitude.set(0.03);
+
+        // Use a lag to smoothly change frequency.
+        add(lag = new AsymptoticRamp());
+        double hlife = 0.01 + (Math.random() * 0.9);
+        lag.halfLife.set(hlife);
+
+        // Set left/right pan randomly between -1.0 and +1.0.
+        add(panner = new Pan());
+        panner.pan.set((Math.random() * 2.0) - 1.0);
+
+        // Track the frequency coming through the tiePoint.
+        tiePoint.output.connect(lag.input);
+        // Add the LFO offset.
+        lfo.output.connect(lag.input);
+
+        lag.output.connect(osc.frequency);
+
+        // Connect the oscillator to the left and right audio output.
+        osc.output.connect(panner.input);
+    }
+    @Override
+    public UnitOutputPort getOutput() {
+        return panner.output;
+    }
+}
+import java.util.Scanner;
+import java.lang.Math;
+public class Question6
+{
+    public static void main(String ...arr)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.print("Enter the coordinates of the first point(x1,y1) : ");//input seperated by space
+        float x1=input.nextFloat();
+        float y1=input.nextFloat();
+        System.out.print("Enter the coordinates of the second point(x2,y2) : ");
+        float x2=input.nextFloat();
+        float y2=input.nextFloat();
+        double distance=Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
+        System.out.printf("Distance between two points is : %.3f units\n" , distance);
+       
+    }
+}
+import java.util.Scanner;
+import java.math.*;
+public class Question5
+{
+    public static void main(String ...arr)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.print("Enter the length of the side of Equilateral triangle in cm : ");
+        float side=input.nextFloat();
+        double area=(Math.sqrt(3)/4)*Math.pow(side,2);
+        double volume=area*side;
+        System.out.printf("Area of the triangle : %.2f cm2\n" , area);
+        System.out.printf("(Triangle doesn't have volume mistake in question!)Volume : %.2f cm3\n",volume);
+    }
+}
+import java.util.Scanner;
+
+public class Question1
+{
+    public static void main(String ...arr)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.print("Enter any two numbers two add: ");
+        int num1=input.nextInt();
+        int num2=input.nextInt();
+        System.out.println("Sum of those two numbers is : "+(num1+num2));      
+    }
+}
+Aimport java.util.Scanner;
+public class Question2
+{
+    public static void main(String ...arr)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.print("Enter the distance in mile: ");
+        double mile=input.nextDouble();
+        System.out.println(mile + " mile is equal to " +(1.6*mile)+" Kilometers.");
+    }
+}

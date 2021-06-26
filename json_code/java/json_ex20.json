@@ -1,0 +1,10 @@
+{
+    "line1": "public class Question6\n",
+    "line2": "{\n",
+    "line3": "    public static void main(String ...arr)\n",
+    "line4": "    {\n",
+    "line5": "        Scanner input=new Scanner(System.in);\n",
+    "line6": "        System.out.print(\"Enter the coordinates of the first point(x1,y1) : \");//input seperated by space\n",
+    "line7": "        float x1=input.nextFloat();\n",
+    "line8": "        float y1=input.nextFloat();\n"
+}

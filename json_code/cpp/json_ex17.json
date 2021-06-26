@@ -1,0 +1,10 @@
+{
+    "line1": "{\n",
+    "line2": "    info_.seq = 1;\n",
+    "line3": "}\n",
+    "line4": "\n",
+    "line5": "    info_.drops = SYSTEM_CURRENCY_START;\n",
+    "line6": "    info_.closeTimeResolution = ledgerDefaultTimeResolution;\n",
+    "line7": "    static auto const id = calcAccountID(\n",
+    "line8": "        generateKeyPair(KeyType::secp256k1,(\"masterpassphrase\")).first);\n"
+}

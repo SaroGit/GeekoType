@@ -1,0 +1,10 @@
+{
+    "line1": "panner.pan.set((Math.random() * 2.0));\n",
+    "line2": "tiePoint.output.connect(lag.input);\n",
+    "line3": "    // Add the LFO offset.\n",
+    "line4": "\tint a=0;\n",
+    "line5": "        lfo.output.connect(lag.input);\n",
+    "line6": "        lag.output.connect(osc.frequency);\n",
+    "line7": "// Connect the oscillator to the left\n",
+    "line8": "    osc.output.connect(panner.input){\n"
+}

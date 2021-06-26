@@ -1,0 +1,10 @@
+{
+    "line1": "        tiePoint.output.connect(lag.input);\n",
+    "line2": "        // Add the LFO offset.\n",
+    "line3": "        lfo.output.connect(lag.input);\n",
+    "line4": "\n",
+    "line5": "        lag.output.connect(osc.frequency);\n",
+    "line6": "\n",
+    "line7": "        // Connect the oscillator to the left and right audio output.\n",
+    "line8": "        osc.output.connect(panner.input);\n"
+}

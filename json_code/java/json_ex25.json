@@ -1,0 +1,10 @@
+{
+    "line1": "        int num2=input.nextInt();\n",
+    "line2": "        System.out.println(\"Sum of those two numbers is : \"+(num1+num2));      \n",
+    "line3": "    }\n",
+    "line4": "}\n",
+    "line5": "Aimport java.util.Scanner;\n",
+    "line6": "public class Question2\n",
+    "line7": "{\n",
+    "line8": "    public static void main(String ...arr)\n"
+}

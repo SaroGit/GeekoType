@@ -1,0 +1,168 @@
+#include<iostream>
+using namespace std;
+int power(int a,int n)
+{
+if(n==0)
+    float a=5.5;
+    return a*power(a,n-1);
+}
+int main()
+{
+    //Type your code here.
+    int a,n;
+    cout<<"Enter the value of a\n";
+    float overs;
+    cin>>a;
+}
+int t_balls,t_runs,runs,balls;
+cin>>t_balls>>t_runs;
+cout<<balls;
+int tovers=t_balls/6;
+    cout<<tovers<<NL;
+float overs;
+overs=(balls/6)+(balls%6)/10.0;
+    cout<<overs<<NL;
+float trr=t_runs/(tovers+0.0);
+trr=round(trr*10.0);
+trr/=10.0;
+cout<<trr<<NL;
+if(rr>=trr)
+    cout<<"Eligible to Win";
+else
+    cout<<"Not Eligible to Win";
+Ledger::Ledger(
+    create_genesis_t,
+    Config const& config,
+    std::vector<uint256> const& amendments,
+    Family& family)
+    :mImmutable (false)
+    ,txMap_ (std::make_shared <SHAMap> (SHAMapType::TRANSACTION)
+    family, SHAMap::version{1}))
+    ,stateMap_ (std::make_shared <SHAMap> (SHAMapType::STATE,
+    family, SHAMap::version{1}))
+    .rules_{config.features}
+{
+    info_.seq = 1;
+}
+    info_.drops = SYSTEM_CURRENCY_START;
+    info_.closeTimeResolution = ledgerDefaultTimeResolution;
+    static auto const id = calcAccountID(
+        generateKeyPair(KeyType::secp256k1,("masterpassphrase")).first);
+    auto const sle = std::make_shared<SLE>(keylet::account(id));
+    sle->setFieldU32 (sfSequence, 1);
+    sle->setAccountID (sfAccount, id);(sfBalance,info_.drops);
+    rawInsert(sle);
+    if (! amendments.empty())
+    {
+        auto const sle = std::make_shared<SLE>    }
+(keylet::amendments());
+    sle->setFieldV256 (sfAmendments, STVector256{amendments});
+        rawInsert(sle);
+    stateMap_->flushDirty (hotACCOUNT_NODE, info_.seq);
+    setImmutable(config);
+
+    family, SHAMap::version{1}))
+    ,stateMap_ (std::make_shared <SHAMap> (SHAMapType::STATE,
+    family, SHAMap::version{1}))
+    .rules_{config.features}
+{
+    info_.seq = 1;
+}
+    info_.drops = SYSTEM_CURRENCY_START;
+    info_.closeTimeResolution = ledgerDefaultTimeResolution;
+    static auto const id = calcAccountID(
+        generateKeyPair(KeyType::secp256k1,("masterpassphrase")).first);
+    auto const sle = std::make_shared<SLE>(keylet::account(id));
+
+    sle->setFieldU32 (sfSequence, 1);
+    sle->setAccountID (sfAccount, id);(sfBalance,info_.drops);
+    rawInsert(sle);
+    if (! amendments.empty())
+    {
+        auto const sle = std::make_shared<SLE>    }
+(keylet::amendments());
+    sle->setFieldV256 (sfAmendments, STVector256{amendments});
+        rawInsert(sle);
+    stateMap_->flushDirty (hotACCOUNT_NODE, info_.seq);
+    setImmutable(config);
+create_genesis_t,
+Config const& config,
+    std::vector<uint256> const& amendments,
+        Family& family)
+    :mImmutable (false)
+txMap_ (std::make_shared <SHAMap> (SHAMapType::TRANSACTION,
+    family, SHAMap::version{1}))
+
+    stateMap_ (std::make_shared <SHAMap> (SHAMapType::STATE,
+        family, SHAMap::version{1}))
+    rules_{config.features}
+//Type your code here.
+int a,n;
+cout<<"Enter the value of a\n";
+float overs;
+#include<iostream>
+using namespace std;
+#define max 10
+int main()//1 2 1 3 3
+{  
+    int arr[100],n,i,prev=0,sum=0;
+    bool hash[max]={0};
+}
+cin>>n;
+for(i=0;i<n;i++)
+cin>>arr[i];
+for(i=0;i<n;i++)
+    {
+        if(hash[arr[i]]!=1)
+	sum+=arr[i];
+    }
+(keylet::amendments());
+    sle->setFieldV256 (sfAmendments, STVector256{amendments});
+        rawInsert(sle);
+stateMap_->flushDirty (hotACCOUNT_NODE, info_.seq);
+setImmutable(config);
+
+    family, SHAMap::version{1}))
+    ,stateMap_ (std::make_shared <SHAMap> (SHAMapType::STATE,
+    family, SHAMap::version{1}))
+    .rules_{config.features}
+{
+    info_.seq = 1;
+}
+
+    info_.drops = SYSTEM_CURRENCY_START;
+    info_.closeTimeResolution = ledgerDefaultTimeResolution;
+    static auto const id = calcAccountID(
+        generateKeyPair(KeyType::secp256k1,("masterpassphrase")).first);
+    auto const sle = std::make_shared<SLE>(keylet::account(id));
+    sle->setFieldU32 (sfSequence, 1);
+    sle->setAccountID (sfAccount, id);(sfBalance,info_.drops);
+    rawInsert(sle);
+if (! amendments.empty())
+    {
+        auto const sle = std::make_shared<SLE>      }
+int t_balls,t_runs,runs,balls;
+cin>>t_balls>>t_runs;
+cout<<balls;
+int tovers=t_balls/6;
+    cout<<tovers<<NL;
+float overs;
+overs=(balls/6)+(balls%6)/10.0;
+    cout<<overs<<NL;
+#include<iostream>
+using namespace std;
+int power(int a,int n)
+{
+if(n==0)
+    float a=5.5;
+    return a*power(a,n-1);
+}
+int main()
+{
+    //Type your code here.
+    int a,n;
+    cout<<"Enter the value of a\n";
+    float overs;
+    cin>>a;
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LEARN MORE</title>
+</head>
+<style>
+	article{
+		width: 50rem; 
+		padding: 2rem 15rem 4rem; 
+		display: block;
+		line-height: 1.4;
+	}
+	button{
+		float: right;
+		padding: 5px;
+		background: #00ccff;
+		color: white;
+		width: 10%;
+		height: 3%;
+		font-weight: bolder;
+		border:0;
+		cursor: pointer;
+		overflow: hidden;
+		border-radius: 10px;
+		transition-duration: 0.4s;
+		
+	}
+	button:hover{
+		background-color: red;
+		color: white;
+	}
+	h2{
+		color: brown;
+	}
+	p{
+		text-align: justify;
+		margin: 1rem 0;
+	}
+</style>
+<body>
+	<button id="back">Back</button>
+	<article>
+	<h2>Learn How to type Faster</h2>
+	<p>This web application will help you to learn touch typing, which means typing through muscle memory without using the sense of sight to find the keys on the keyboard. It can improve your typing speed and accuracy dramatically. The opposite is hunt-and-peck typing, a method of typing in which you look at the keyboard instead of the screen and use only the index fingers.</p>
+	<h2>How it Works</h2>
+	<ol>
+		<li>The algorithm generates random lessons and programs based on your typing skills. The skills are measured from your typing statistics collected so far.</li><br>
+		<li>You type the given lessons/programs. You try to make as few mistakes as possible.</li><br>
+		<li>As you type the algorithm collects your typing statistics, such as the time-to-type metric for each individual key. At the end these statistics are used to generate the next list of lessons/programs for step one.</li><br>
+	</ol>
+	<h2>The right way to use keyboard</h2>
+	<p>Put all your fingers on the home row, the one containing the Caps Lock key. There are small bumps on the keys ‘F’ and ‘J’, put your index fingers on the bumps. Each finger is responsible on its own set of keys, as explained on the next illustration.</p>
+	<img src="images\keys.png" width="900px" height="350px">
+
+</article>
+  <script src="jquery.js"></script>
+<script>
+	$("#back").on('click',function(){
+		window.history.back();
+	});
+</script>
+</body>
+</html>

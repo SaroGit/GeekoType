@@ -1,0 +1,10 @@
+{
+    "line1": "class Follower extends Circuit implements UnitSource\n",
+    "line2": "{\n",
+    "line3": "    UnitOscillator osc;\n",
+    "line4": "    AsymptoticRamp lag;\n",
+    "line5": "    Pan panner;\n",
+    "line6": "    Follower() {\n",
+    "line7": "        // Add a tone generator;\n",
+    "line8": "}\n"
+}

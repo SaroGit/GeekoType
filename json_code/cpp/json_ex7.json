@@ -1,0 +1,10 @@
+{
+    "line1": "    static auto const id = calcAccountID(\n",
+    "line2": "        generateKeyPair(KeyType::secp256k1,(\"masterpassphrase\")).first);\n",
+    "line3": "    auto const sle = std::make_shared<SLE>(keylet::account(id));\n",
+    "line4": "    sle->setFieldU32 (sfSequence, 1);\n",
+    "line5": "    sle->setAccountID (sfAccount, id);(sfBalance,info_.drops);\n",
+    "line6": "    rawInsert(sle);\n",
+    "line7": "    if (! amendments.empty())\n",
+    "line8": "    {\n"
+}

@@ -1,0 +1,10 @@
+{
+    "line1": "    Complex[] q = fft(even);\n",
+    "line2": "\n",
+    "line3": "    // fft of odd terms\n",
+    "line4": "    Complex[] odd = even; // reuse the array\n",
+    "line5": "    for (int k = 0; k < N / 2; k++) {\n",
+    "line6": "        odd[k] = x[2 * k + 1];\n",
+    "line7": "    }\n",
+    "line8": "    Complex[] r = fft(odd);\n"
+}

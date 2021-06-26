@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Sign In Page</title>
+    <link rel="stylesheet" href="signin_styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>
+  <img class="pre_load" src="..\images\loader.gif">
+  <div id="content">
+        <nav id="myNav" class="topnav">
+          <img src="..\images\keyboard_icon.png" >
+          <span> Geeko Type.com</span>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             <i class="fa fa-bars"></i>
+          </a>
+          <a id="feed">Feedback</a>
+          <a href="learn_more.html">Learn More</a>
+          <a href="sign_in.html" class="active" >Sign In</a>
+          <a href="signup/sign_up.html">Sign Up</a>
+          <a href="..\home.html">Home</a>  
+        </nav>
+  
+<div id="Feedback_container">
+      <div id="Feedback">
+        <h2 style="padding: 0; background: #66cc00; color: white; margin-top: 0;">Feedback</h2>
+        <textarea id="feed_text" rows="8" cols="50" placeholder="Enter your Feedback!!"></textarea><br>
+        <button class="button">Submit</button>
+        <button id="close">Close</button>
+      </div>
+    </div>
+
+    <div id="sign_in_div1">
+            <form id="sign_in_form" action="sign_in.html" method="post">
+            <h1>LOGIN</h1>
+            <input type="email" name="" id="username" placeholder="Email-Id" autofocus>
+            <label id="text_label"></label>
+            <input type="password" name="" id="password" placeholder="Password">
+            <label id="pass_label"></label>
+            <div><button id="forget">Forgot Password?</button></div>
+            <div style="margin-top: 10px;">Don't have one? <a href="../signup/sign_up.html">Click here to create an Account</a></div>
+            <button type="submit" id="login_button" onclick=" return validate()">Login</button>
+        </form>
+    </div>
+</div>
+       <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+
+<script src="../jquery.js"></script>
+<script>
+         $(window).ready(function(){
+      $(".pre_load").fadeOut(2000);
+    });
+  var forgetbtn=$("#forget");
+  forgetbtn.on('click',function(){
+    window.location.href="forget_pass.html";
+    return false;
+  });
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCqaGiXWgJsXj04xZ10ULHkUaIcVxZhny8",
+    authDomain: "geekotype.firebaseapp.com",
+    databaseURL: "https://geekotype-default-rtdb.firebaseio.com",
+    projectId: "geekotype",
+    storageBucket: "geekotype.appspot.com",
+    messagingSenderId: "370787733542",
+    appId: "1:370787733542:web:782eaf81d7cd8c72b316e7",
+    measurementId: "G-7PZBTQLPWH"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  const auth = firebase.auth();
+
+// when user signs in and signs out
+
+  // sign-in
+  const loginform= $("#sign_in_form");
+  loginform.on('submit', (e) => {
+  e.preventDefault();
+  const mail = document.getElementById('username').value;
+  const passw = document.getElementById('password').value;
+  auth.signInWithEmailAndPassword(mail,passw).then(cred =>{
+    auth.onAuthStateChanged((user) => {
+   if (user.emailVerified) {
+    console.log("Email verified");
+     window.location.href="../practice_code.html";
+  }else{
+ alert("It seems like you haven't verified your email. Please click on the link sent to your email\nAfter that click ok to reload");
+ location.reload();
+ }
+
+});//end auth
+    }).catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    alert("Error: "+ errorMessage);
+  });
+
+    
+  });//end form
+function myFunction() {
+  var x = document.getElementById("myNav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script src="signin_script.js"></script>
+</body>
+</html>

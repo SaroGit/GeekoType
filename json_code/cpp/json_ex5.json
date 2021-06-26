@@ -1,0 +1,10 @@
+{
+    "line1": "Ledger::Ledger(\n",
+    "line2": "    create_genesis_t,\n",
+    "line3": "    Config const& config,\n",
+    "line4": "    std::vector<uint256> const& amendments,\n",
+    "line5": "    Family& family)\n",
+    "line6": "    :mImmutable (false)\n",
+    "line7": "    ,txMap_ (std::make_shared <SHAMap> (SHAMapType::TRANSACTION)\n",
+    "line8": "    family, SHAMap::version{1}))\n"
+}

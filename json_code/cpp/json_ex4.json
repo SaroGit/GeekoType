@@ -1,0 +1,10 @@
+{
+    "line1": "float trr=t_runs/(tovers+0.0);\n",
+    "line2": "trr=round(trr*10.0);\n",
+    "line3": "trr/=10.0;\n",
+    "line4": "cout<<trr<<NL;\n",
+    "line5": "if(rr>=trr)\n",
+    "line6": "    cout<<\"Eligible to Win\";\n",
+    "line7": "else\n",
+    "line8": "    cout<<\"Not Eligible to Win\";\n"
+}

@@ -1,0 +1,10 @@
+{
+    "line1": "public static Complex[] fft(Complex[] x) {\n",
+    "line2": "    int N = x.length;\n",
+    "line3": "\n",
+    "line4": "        // base case\n",
+    "line5": "    if (N == 1)\n",
+    "line6": "        return new Complex[] { x[0] };\n",
+    "line7": "\n",
+    "line8": "        // radix 2 Cooley-Tukey FFT\n"
+}

@@ -1,0 +1,10 @@
+{
+    "line1": "        System.out.print(\"Enter the coordinates of the second point(x2,y2) : \");\n",
+    "line2": "        float x2=input.nextFloat();\n",
+    "line3": "        float y2=input.nextFloat();\n",
+    "line4": "        double distance=Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));\n",
+    "line5": "        System.out.printf(\"Distance between two points is : %.3f units\\n\" , distance);\n",
+    "line6": "       \n",
+    "line7": "    }\n",
+    "line8": "}\n"
+}

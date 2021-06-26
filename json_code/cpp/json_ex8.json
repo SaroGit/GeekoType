@@ -1,0 +1,10 @@
+{
+    "line1": "        auto const sle = std::make_shared<SLE>    }\n",
+    "line2": "(keylet::amendments());\n",
+    "line3": "    sle->setFieldV256 (sfAmendments, STVector256{amendments});\n",
+    "line4": "        rawInsert(sle);\n",
+    "line5": "    stateMap_->flushDirty (hotACCOUNT_NODE, info_.seq);\n",
+    "line6": "    setImmutable(config);\n",
+    "line7": "\n",
+    "line8": "    family, SHAMap::version{1}))\n"
+}

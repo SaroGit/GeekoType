@@ -1,0 +1,10 @@
+{
+    "line1": "        double hlife = 0.01 + (Math.random() * 0.9);\n",
+    "line2": "        lag.halfLife.set(hlife);\n",
+    "line3": "\n",
+    "line4": "        // Set left/right pan randomly between -1.0 and +1.0.\n",
+    "line5": "        add(panner = new Pan());\n",
+    "line6": "        panner.pan.set((Math.random() * 2.0) - 1.0);\n",
+    "line7": "\n",
+    "line8": "        // Track the frequency coming through the tiePoint.\n"
+}

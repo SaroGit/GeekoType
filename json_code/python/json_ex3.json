@@ -1,0 +1,9 @@
+{
+    "line1": "mcq_marks = float(input(\"Enter the MCQ marks: \"))\n",
+    "line2": "theory_marks = float(input(\"Enter the Theory marks: \"))\n",
+    "line3": "# Check the passing condition using AND and OR operator\n",
+    "line4": "if (mcq_marks >= 40 and theory_marks >= 30)\n",
+    "line5": "    print(\"\\nYou have passed\")\n",
+    "line6": "else:\n",
+    "line7": "    print(\"\\nYou have failed\")"
+}

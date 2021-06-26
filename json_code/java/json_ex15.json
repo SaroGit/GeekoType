@@ -1,0 +1,10 @@
+{
+    "line1": "        primeList.add(exponent);\n",
+    "line2": "    }\n",
+    "line3": "    return primeListToArray(primeList);\n",
+    "line4": "}\n",
+    "line5": "class Follower extends Circuit implements UnitSource {\n",
+    "line6": "    UnitOscillator osc;\n",
+    "line7": "    AsymptoticRamp lag;\n",
+    "line8": "    Pan panner;\n"
+}

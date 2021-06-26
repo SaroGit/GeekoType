@@ -1,0 +1,10 @@
+{
+    "line1": "    int exponent = 0;\n",
+    "line2": "    while (n > 1) {\n",
+    "line3": "        // does the prime number divide evenly into n?\n",
+    "line4": "        int d = n / p;\n",
+    "line5": "        int m = d * p;\n",
+    "line6": "        if (m == n) {\n",
+    "line7": "            n = d;\n",
+    "line8": "            exponent += 1;\n"
+}

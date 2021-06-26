@@ -1,0 +1,10 @@
+{
+    "line1": "filename = \"languages.txt\"\n",
+    "line2": "fileHandler = open(filename, \"w\")\n",
+    "line3": "fileHandler.write(\"Bash\\nPHP\\nPython\\n\")\n",
+    "line4": "fileHandler.close()\n",
+    "line5": "fileHandler = open(filename, \"r\")\n",
+    "line6": "for line in fileHandler:\n",
+    "line7": "    print(line)\n",
+    "line8": "fileHandler.close()"
+}

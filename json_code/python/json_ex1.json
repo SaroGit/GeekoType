@@ -1,0 +1,9 @@
+{
+    "line1": "def factorial(n):\n",
+    "line2": "    # single line to find factorial\n",
+    "line3": "    return 1 if (n==1 or n==0) else n * factorial(n - 1);\n",
+    "line4": "# Driver Code\n",
+    "line5": "num = 5;\n",
+    "line6": "print(\"Factorial of\",num,\"is\"\n",
+    "line7": "factorial(num))"
+}

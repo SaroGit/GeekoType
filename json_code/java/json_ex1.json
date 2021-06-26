@@ -1,0 +1,10 @@
+{
+    "line1": "public class HelloWorld\n",
+    "line2": "{\n",
+    "line3": "    public static void main(String[] args) {\n",
+    "line4": "        System.out.println(\"Hello, World\");\n",
+    "line5": "    //Sample one\n",
+    "line6": "    int num=10;\n",
+    "line7": "    }\n",
+    "line8": "}"
+}

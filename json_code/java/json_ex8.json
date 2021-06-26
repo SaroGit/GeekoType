@@ -1,0 +1,10 @@
+{
+    "line1": "    if (N % 2 != 0) {\n",
+    "line2": "        throw new RuntimeException(\"N is not a power of 2\");\n",
+    "line3": "    }\n",
+    "line4": "        // fft of even terms\n",
+    "line5": "    Complex[] even = new Complex[N / 2];\n",
+    "line6": "    for (int k = 0; k < N / 2; k++) {\n",
+    "line7": "        even[k] = x[2 * k];\n",
+    "line8": "    }\n"
+}

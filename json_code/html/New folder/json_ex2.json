@@ -1,0 +1,10 @@
+{
+    "line1": "<link href=\"dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n",
+    "line2": "<link href=\"blog.css\" rel=\"stylesheet\">\n",
+    "line3": "</head>\n",
+    "line4": "<div class=\"blog-masthead\">\n",
+    "line5": "  <div class=\"container\">\n",
+    "line6": "    <nav class=\"nav blog-nav\">\n",
+    "line7": "      <a class=\"nav-link active\" href=\"#\">Home</a>\n",
+    "line8": "      <a class=\"nav-link\" href=\"#\">New features</a>\n"
+}

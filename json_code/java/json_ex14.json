@@ -1,0 +1,10 @@
+{
+    "line1": "        } else {\n",
+    "line2": "            primeList.add(exponent);\n",
+    "line3": "            exponent = 0;\n",
+    "line4": "            i += 1;\n",
+    "line5": "            p = primes[i];\n",
+    "line6": "        }\n",
+    "line7": "    }\n",
+    "line8": "    if (exponent > 0) {\n"
+}

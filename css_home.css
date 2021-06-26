@@ -1,0 +1,269 @@
+body {
+	background-color: #606060;
+	text-align: center;
+	margin: 0;
+}
+.pre_load{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: #e8e8e8;
+}
+#content {
+	max-width: 100%;
+	max-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(60,1fr);
+    grid-template-rows: repeat(10,10%);
+	grid-gap: 8px;
+}
+#content > *{
+	background: #606060;
+	padding: 10px 10px 10px 10px;
+}
+#content .topnav {
+	grid-column: 1/61;
+	background: rgba(0,0,0,0.4);
+	border: 1px solid white;
+}
+.topnav img {
+	float: left;
+	padding-left: 25px;
+}
+.topnav span {
+	float: left;
+	padding: 5px 10px 15px 20px;
+	font-size: 25px;
+	font-weight: bold;
+	color: blue;
+}
+.topnav a{
+	text-decoration: none;
+	display: block;
+	line-height: 33px;
+	margin:0 15px;
+	float: right;
+	color: white;
+	font-size: 20px;
+	background-color: rgb(0,0,0,0.2);
+	padding: 3px 9px 3px;
+	border-radius: 8px;
+}
+.topnav .icon{
+	display: none;
+}
+.topnav a.active,
+.topnav a:hover {
+background: red;
+}
+#content aside {
+	grid-column: 5/27;
+	grid-row: 3/12;
+}
+#content aside img{
+	height: 70%;
+	width: 100%;
+}
+#content main {
+	grid-column: 29/57;
+	grid-row: 4/9;
+	display: grid;
+	grid-gap: 10px;
+}
+#content .one{
+	font-size: 2em;
+	color: white;
+	padding-bottom: 30px;
+}
+#content .two a{
+	text-decoration: none;
+    cursor: pointer;
+	font-size: 1.5em;
+	font-weight: bold;
+	background: #E503C1;
+	padding: 10px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+#content .two a:hover {
+	position: relative;
+	top: 2px;
+	left: 2px;
+	background-color: #EF4F4F;
+}
+#content .three {
+	margin-top: 40px;
+	font-size: 2em;
+	color: white;
+	padding-bottom: 30px;
+}
+#content .practice span a{
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 1.25em;
+	margin: 10px;
+	border: 2px solid white;
+	border-radius: 20px;
+	padding: 15px;
+	background: #73C976;
+
+}
+#content .practice span a:hover {
+	position: relative;
+	top: 2px;
+	left: 2px;
+	background-color: #EF4F4F;
+}
+#content footer {
+	grid-column: 1/61;
+	grid-row: 11/12;
+	background: #E36767;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	border: 3px solid black;
+	border-radius: 20px;
+}
+footer div {
+	padding: 20px;
+}
+
+#Feedback_container{
+	background: rgba(0,0,0,0.6);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+#Feedback{
+	height: 50%;
+	width: 40%;
+	background: white;
+	position: relative;
+	text-align: center;
+}
+#Feedback textarea{
+	margin:10px;
+	width: 80%;
+	height: 55%;
+}
+.button{
+	background-color: #00ccff;
+	border-color: white;
+	color: white;
+	padding: 10px;
+	font-weight: bold;
+	border-radius: 10px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+.button:hover{
+	background-color: white;
+	color: #00ccff;
+}
+
+#close{
+	background-color: #ff66ff;
+	border-color: white;
+	color: white;
+	padding: 10px;
+	font-weight: bolder;
+	border-radius: 10px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+#close:hover{
+	background-color: white;
+	color: #ff66ff;
+}
+
+@media screen and (min-height: 650px){
+	#content {
+		grid-gap: 9px;
+	}
+	#content aside img{
+		height: 75%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+.pre_load,#Feedback_container{
+	width: 170%;
+	height: 170%;
+}
+#Feedback{
+	width: 80%;
+	height: 40%;
+}
+.topnav{
+	width: 120%;
+	height: 70%;
+}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+	float: right;
+	font-size: 35px;
+	margin-top: 20px;
+	display: block;
+  }
+
+.topnav span{
+	padding-top: 2%;
+	font-size: 2.6em;
+}
+.topnav img{
+	width:13%;
+}
+
+  .topnav.responsive {position: relative;
+  	height: 57%;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    font-size: 35px;
+  }
+  .topnav.responsive a {
+  	clear: left;
+    float: none;
+    font-size: 25px;
+    margin:0;
+    display: block;
+    text-align: center;
+  }
+  #content aside{
+   	grid-column: 10/51;
+	grid-row: 2/7;
+	width: 120%;
+  }
+  #content aside img{
+  	height: 100%;
+  	width: 120%;
+  }
+  #content main{
+   	grid-column: 10/51;
+	grid-row: 7/12;
+	width: 120%;
+  }
+  #content main section{
+  	margin-left: 40px;
+  	padding: 0px;
+  }
+  #content .three{
+  	padding-bottom: 0;
+  	margin-top: 24px;
+  }
+  #content footer{
+  	width: 120%;
+  }
+ #content .practice span{
+ 	display:grid;
+ }
+}

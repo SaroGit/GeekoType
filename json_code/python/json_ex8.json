@@ -1,0 +1,10 @@
+{
+    "line1": "def simple_interest(p,t,r):\n",
+    "line2": "    print('The principal is', p)\n",
+    "line3": "    print('The time period is', t)\n",
+    "line4": "    print('The rate of interest is',r)\n",
+    "line5": "    si = (p * t * r)/100\n",
+    "line6": "    print('The Simple Interest is', si)\n",
+    "line7": "    return si\n",
+    "line8": "simple_interest(8, 6, 8)"
+}

@@ -1,0 +1,10 @@
+{
+    "line1": "{\n",
+    "line2": "    //Type your code here.\n",
+    "line3": "    int a,n;\n",
+    "line4": "    cout<<\"Enter the value of a\\n\";\n",
+    "line5": "    float overs;\n",
+    "line6": "    cin>>a;\n",
+    "line7": "}\n",
+    "line8": "\n"
+}

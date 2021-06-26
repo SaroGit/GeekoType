@@ -1,0 +1,10 @@
+{
+    "line1": "def employee_details(ID):\n",
+    "line2": "    switcher = {\n",
+    "line3": "        \"1004\": \"Employee Name: MD. Mehrab\",\n",
+    "line4": "        \"1009\": \"Employee Name: Mita Rahman\",  \n",
+    "line5": "        \"1010\": \"Employee Name: Sakib Al Hasan\",}\n",
+    "line6": "    return switcher.get(ID, \"nothing\")\n",
+    "line7": "ID = input(\"Enter the employee ID: \")\n",
+    "line8": "print(employee_details(ID))"
+}

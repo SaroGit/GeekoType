@@ -1,0 +1,10 @@
+{
+    "line1": "        family, SHAMap::version{1}))\n",
+    "line2": "    rules_{config.features}\n",
+    "line3": "//Type your code here.\n",
+    "line4": "int a,n;\n",
+    "line5": "cout<<\"Enter the value of a\\n\";\n",
+    "line6": "float overs;\n",
+    "line7": "#include<iostream>\n",
+    "line8": "using namespace std;\n"
+}

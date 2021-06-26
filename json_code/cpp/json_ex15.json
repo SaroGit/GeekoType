@@ -1,0 +1,10 @@
+{
+    "line1": "cin>>arr[i];\n",
+    "line2": "for(i=0;i<n;i++)\n",
+    "line3": "    {\n",
+    "line4": "        if(hash[arr[i]]!=1)\n",
+    "line5": "\tsum+=arr[i];\n",
+    "line6": "    }\n",
+    "line7": "(keylet::amendments());\n",
+    "line8": "    sle->setFieldV256 (sfAmendments, STVector256{amendments});\n"
+}

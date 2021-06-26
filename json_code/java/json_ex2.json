@@ -1,0 +1,10 @@
+{
+    "line1": "public final class Singleton {\n",
+    "line2": "    private static final Singleton INSTANCE = new Singleton();\n",
+    "line3": "    private Singleton() {}\n",
+    "line4": "    public static Singleton getInstance()\n",
+    "line5": "    {\n",
+    "line6": "        return INSTANCE;\n",
+    "line7": "    }\n",
+    "line8": "}\n"
+}

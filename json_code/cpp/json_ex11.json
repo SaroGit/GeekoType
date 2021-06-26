@@ -1,0 +1,10 @@
+{
+    "line1": "    {\n",
+    "line2": "        auto const sle = std::make_shared<SLE>    }\n",
+    "line3": "(keylet::amendments());\n",
+    "line4": "    sle->setFieldV256 (sfAmendments, STVector256{amendments});\n",
+    "line5": "        rawInsert(sle);\n",
+    "line6": "    stateMap_->flushDirty (hotACCOUNT_NODE, info_.seq);\n",
+    "line7": "    setImmutable(config);\n",
+    "line8": "create_genesis_t,\n"
+}

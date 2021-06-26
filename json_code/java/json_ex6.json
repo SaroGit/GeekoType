@@ -1,0 +1,10 @@
+{
+    "line1": "@Override\n",
+    "line2": "    public UnitOutputPort getOutput()\n",
+    "line3": "    {\n",
+    "line4": "        return panner.output;\n",
+    "line5": "\tUnitOscillator osc;\n",
+    "line6": "    \tAsymptoticRamp lag;\n",
+    "line7": "    }\n",
+    "line8": "}\n"
+}

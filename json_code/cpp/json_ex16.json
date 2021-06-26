@@ -1,0 +1,10 @@
+{
+    "line1": "        rawInsert(sle);\n",
+    "line2": "stateMap_->flushDirty (hotACCOUNT_NODE, info_.seq);\n",
+    "line3": "setImmutable(config);\n",
+    "line4": "\n",
+    "line5": "    family, SHAMap::version{1}))\n",
+    "line6": "    ,stateMap_ (std::make_shared <SHAMap> (SHAMapType::STATE,\n",
+    "line7": "    family, SHAMap::version{1}))\n",
+    "line8": "    .rules_{config.features}\n"
+}

@@ -1,0 +1,10 @@
+{
+    "line1": "# Import sys module\n",
+    "line2": "import sys\n",
+    "line3": "# Total number of arguments\n",
+    "line4": "print('Total arguments:', len(sys.argv))\n",
+    "line5": "print(\"Argument values are:\")\n",
+    "line6": "# Iterate command-line arguments using for loop\n",
+    "line7": "for i in sys.argv:\n",
+    "line8": "    print(i)"
+}

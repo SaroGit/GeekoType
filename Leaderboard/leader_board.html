@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leader Board using HTML CSS and Javascript</title>
+    <link rel="stylesheet" href="leader_style.css">
+</head>
+<body>
+  <img class="pre_load" src="../images\loader.gif">
+<div class="heading"><h1 style="color: white; text-align: center; font-weight: 600;">LeaderBoard</h1></div>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Rank</th>
+            <th>Points</th>
+        </tr>
+    </thead>
+    <tbody id="table-body">
+        
+    </tbody>
+</table>
+<!-- <button id="but">Add</button> -->
+
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+<script src="../jquery.js"></script>
+
+    <script>
+      $(window).ready(function(){
+    $(".pre_load").fadeOut(4000);
+    });
+
+    var firebaseConfig = {
+    apiKey: "AIzaSyCqaGiXWgJsXj04xZ10ULHkUaIcVxZhny8",
+    authDomain: "geekotype.firebaseapp.com",
+    databaseURL: "https://geekotype-default-rtdb.firebaseio.com",
+    projectId: "geekotype",
+    storageBucket: "geekotype.appspot.com",
+    messagingSenderId: "370787733542",
+    appId: "1:370787733542:web:782eaf81d7cd8c72b316e7",
+    measurementId: "G-7PZBTQLPWH"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+  db.settings({ timestampsInSnapshots: true });
+  </script>
+<script src="leader_js.js"></script>
+</body>
+</html>

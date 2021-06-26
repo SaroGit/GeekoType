@@ -1,0 +1,10 @@
+{
+    "line1": "import math\n",
+    "line2": "x,n =4,3\n",
+    "line3": "power = x ** n\n",
+    "line4": "print(\"%d to the power %d is %d\" % (x,n,power))\n",
+    "line5": "power = pow(x,n)\n",
+    "line6": "print(\"%d to the power %d is %d\" % (x,n,power))\n",
+    "line7": "power = math.pow(2,6.5)\n",
+    "line8": "print(\"%d to the power %d is %5.2f\" % (x,n,power))"
+}

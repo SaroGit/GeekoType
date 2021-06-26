@@ -1,0 +1,10 @@
+{
+    "line1": "#include<iostream>\n",
+    "line2": "using namespace std;\n",
+    "line3": "int power(int a,int n)\n",
+    "line4": "{\n",
+    "line5": "if(n==0)\n",
+    "line6": "    float a=5.5;\n",
+    "line7": "    return a*power(a,n-1);\n",
+    "line8": "}\n"
+}

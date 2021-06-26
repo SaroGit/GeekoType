@@ -1,0 +1,10 @@
+{
+    "line1": "    auto const sle = std::make_shared<SLE>(keylet::account(id));\n",
+    "line2": "    sle->setFieldU32 (sfSequence, 1);\n",
+    "line3": "    sle->setAccountID (sfAccount, id);(sfBalance,info_.drops);\n",
+    "line4": "    rawInsert(sle);\n",
+    "line5": "if (! amendments.empty())\n",
+    "line6": "    {\n",
+    "line7": "        auto const sle = std::make_shared<SLE>      }\n",
+    "line8": "int t_balls,t_runs,runs,balls;\n"
+}

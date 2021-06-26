@@ -1,0 +1,10 @@
+{
+    "line1": "\n",
+    "line2": "public class Question1\n",
+    "line3": "{\n",
+    "line4": "    public static void main(String ...arr)\n",
+    "line5": "    {\n",
+    "line6": "        Scanner input=new Scanner(System.in);\n",
+    "line7": "        System.out.print(\"Enter any two numbers two add: \");\n",
+    "line8": "        int num1=input.nextInt();\n"
+}

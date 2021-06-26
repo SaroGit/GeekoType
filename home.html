@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our First Web Project</title>
+    <link rel="stylesheet" href="css_home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+<body>
+  <img class="pre_load" src="images\loader.gif">
+   <div id="content">
+      <nav id="myNav" class="topnav">
+          <img src="images\keyboard_icon.png" >
+          <span> Geeko Type.com</span>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             <i class="fa fa-bars"></i>
+          </a>
+          <a id="feed">Feedback</a>
+          <a href="learn_more.html">Learn More</a>
+          <a href="signin/sign_in.html">Sign In</a>
+          <a href="signup/sign_up.html">Sign Up</a>
+          <a class="active" href="home.html">Home</a>   
+      </nav>
+      <div id="Feedback_container">
+      <div id="Feedback">
+        <h2 style="padding: 0; background: #66cc00; color: white; margin-top: 0;">Feedback</h2>
+        <textarea id="feed_text" rows="8" cols="50" placeholder="Enter your Feedback!!"></textarea><br>
+        <button class="button">Submit</button>
+        <button id="close">Close</button>
+      </div>
+    </div>
+    <aside>
+      <img src="images\ProgrammerTyping.png" id="div5_image">
+    </aside>
+    <main>
+      <section>
+        <div class="one">Sign Up to join and see your progress</div>
+        <span class="two"><a href="signup/sign_up.html">Sign Up</a></span>
+        <div class="three">Practice and Become a Pro at Typing!</div>
+        <div class="practice" style="padding: 10px">
+          <span><a href="practice_code.html">For Programmers</a></span>
+          <span><a href="practice_qwerty.html">For Practicing QWERTY</a></span>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+        <div style="padding-top: 0">
+          &copy; GeekoType.com 2021-2031<br>
+          Chennai, India<hr>
+          You may reach out to us at<br><a href="" style="color: blue">support@geekotype.com</a>
+        </div>
+        <div>
+          Contact:<br><hr>
+          <a href="" style="color: blue">support@geekotype.com</a><br>
+          Phone: 987654321
+        </div>
+        <div>
+          Follow us on:<br><hr>
+          <button style="background: #1091DA; border-radius: 10px; font-weight: bold;"><a href="https://twitter.com/Saravan38745679?s=08" style="text-decoration: none;"
+          target="_blank">Twitter</a></button>
+          <button style="background: #0AAB10; border-radius: 10px; font-weight: bold;"><a href="https://wa.me/919384154069" style="text-decoration: none;" target="_blank">Whatsapp</a></button>
+        </div>
+    </footer>
+  </div>
+  <script src="jquery.js"></script>
+  <script>
+     $(window).ready(function(){
+      $(".pre_load").fadeOut(3000);
+    });
+      $('#feed').click(function(){
+        $('#Feedback_container').css("display","flex");
+        $('#feed_text').focus();
+      });
+      $('#close').click(function(){
+        $('#Feedback_container').css("display","none");
+        $(".textarea").focus();
+        $("#feed_text").val("");
+        
+      });
+      function myFunction() {
+  var x = document.getElementById("myNav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
+</body>
+</html>

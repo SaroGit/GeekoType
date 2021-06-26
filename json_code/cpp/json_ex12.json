@@ -1,0 +1,10 @@
+{
+    "line1": "Config const& config,\n",
+    "line2": "    std::vector<uint256> const& amendments,\n",
+    "line3": "        Family& family)\n",
+    "line4": "    :mImmutable (false)\n",
+    "line5": "txMap_ (std::make_shared <SHAMap> (SHAMapType::TRANSACTION,\n",
+    "line6": "    family, SHAMap::version{1}))\n",
+    "line7": "\n",
+    "line8": "    stateMap_ (std::make_shared <SHAMap> (SHAMapType::STATE,\n"
+}

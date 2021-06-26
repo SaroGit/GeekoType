@@ -1,0 +1,10 @@
+{
+    "line1": "    }\n",
+    "line2": "    @Override\n",
+    "line3": "    public UnitOutputPort getOutput() {\n",
+    "line4": "        return panner.output;\n",
+    "line5": "    }\n",
+    "line6": "}\n",
+    "line7": "import java.util.Scanner;\n",
+    "line8": "import java.lang.Math;\n"
+}

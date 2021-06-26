@@ -1,0 +1,10 @@
+{
+    "line1": "    public static Singleton getInstance() {\n",
+    "line2": "        return INSTANCE;\n",
+    "line3": "    }\n",
+    "line4": "}\n",
+    "line5": "public static int[] factor(int n) {\n",
+    "line6": "    ArrayList<Integer> primeList = new ArrayList<Integer>();\n",
+    "line7": "    int i = 0;\n",
+    "line8": "    int p = primes[i];\n"
+}

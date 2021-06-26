@@ -1,0 +1,10 @@
+{
+    "line1": "import java.util.Scanner;\n",
+    "line2": "import java.math.*;\n",
+    "line3": "public class Question5\n",
+    "line4": "{\n",
+    "line5": "    public static void main(String ...arr)\n",
+    "line6": "    {\n",
+    "line7": "        Scanner input=new Scanner(System.in);\n",
+    "line8": "        System.out.print(\"Enter the length of the side of Equilateral triangle in cm : \");\n"
+}

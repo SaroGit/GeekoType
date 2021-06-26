@@ -1,0 +1,10 @@
+{
+    "line1": "# import getpass module\n",
+    "line2": "import getpass\n",
+    "line3": "# Take password from the user\n",
+    "line4": "passwd = getpass.getpass('Password:')\n",
+    "line5": "if passwd == \"fahmida\":\n",
+    "line6": "    print(\"You are authenticated\")\n",
+    "line7": "else:\n",
+    "line8": "    print(\"You are not authenticated\")"
+}
